@@ -1,0 +1,117 @@
+body {
+    background: linear-gradient(Pink, MediumVioletRed);
+}
+
+section {
+    height: 100vh;
+}
+
+.vertical-center {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-container {
+    height: 35vh;
+    display: flex;
+    align-items: center;
+}
+
+.container-new-game {
+    transition: transform .2s ease-in-out;
+    cursor: pointer;
+    background: RebeccaPurple;
+}
+
+.container-new-game:hover {
+    transform: scale(1.1);
+}
+
+.container-new-game:active {
+    transform: scale(.8);
+}
+
+.container-join-game {
+    background: DeepSkyBlue;
+}
+
+.home-container-content {
+    margin: 0 auto;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.room-id {
+    color: black;
+}
+
+.btn-join {
+    margin: 0 auto;
+    display: block;
+    font-size: 22px;
+}
+
+.glyphicon {
+    top: 3px;
+    left: 5px;
+    color: white;
+}
+
+.waiting-section {
+    display: none;
+}
+
+.waiting-section .vertical-center, .game-section .vertical-center {
+    flex-direction: column;
+}
+
+.game-section {
+    display: none;
+    position: relative;
+}
+
+table {
+    background-color: white;
+}
+
+.square {
+    height: 150px;
+    width: 150px;
+    font-size: 45pt;
+    text-align: center;
+    cursor: pointer;
+}
+
+.box-alret-winner {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.winner-box {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 230px 450px;
+}
+
+.restart-btn {
+    display: block;
+    margin: 0 auto;
+    font-size: 22px;
+    background: black;
+    border: none;
+    color: wheat;
+    border-radius: 5px;
+}
+
+.winner-text {
+    font-size: 85px;
+    color: black;
+    font-weight: 700;
+}
